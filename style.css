@@ -45,7 +45,7 @@ body {
 
 .blink {
   animation: blink 1s steps(1, end) infinite;
-  font-size: 70px;
+  font-size: 200px;
   font-width: bold;
 }
 
