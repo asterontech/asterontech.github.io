@@ -1,0 +1,101 @@
+body {
+    font-size: 20pt;
+    background-color: transparent;
+    font-family: 'Samsung Sharp Sans';
+}
+
+.scrollmenu {
+  background-color: transparent;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14pt;
+  /*border-top-color: magenta;
+  border-left-color: magenta;
+  border-bottom-color: yellow;
+  border-right-color: yellow;*/
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scrollmenu a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.scrollmenu a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 45px;
+}
+
+
+/* ALIGN CONTENT */
+.container {
+  padding-top: 105px;
+  display: flex;
+  /* Remove horizontal 'justify-content' center if you want the base text not to move */
+  font-family: 'JetBrains Mono', monospace;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.blinking-cursor {
+  font-weight: bold;
+  font-size: 55px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
