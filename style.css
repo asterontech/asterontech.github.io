@@ -38,6 +38,7 @@ body {
   /* Remove horizontal 'justify-content' center if you want the base text not to move */
   justify-content: center;
   align-items: center;
+  padding-top: 150px;
 }
 
 /* ADD CURSOR */
