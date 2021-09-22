@@ -33,7 +33,7 @@ body {
 
 
 /* ALIGN CONTENT */
-.container {
+.h3 {
   padding-top: 150px;
   display: flex;
   /* Remove horizontal 'justify-content' center if you want the base text not to move */
@@ -61,7 +61,7 @@ body {
 	width: 3px;
 	height: 50px;
 	background-color: orange;
-	animation: blink .75s step-end infinite;
+	animation: blink .7s step-end infinite;
 }
 
 @keyframes blink {
@@ -69,6 +69,6 @@ body {
 		background-color: transparent 
 	}
 	50% { 
-		background-color: orange; 
+		background-color: black; 
 	}
 }
