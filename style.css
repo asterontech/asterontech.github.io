@@ -34,7 +34,7 @@ body {
 
 /* ALIGN CONTENT */
 .container {
-  padding-top: 110px;
+  padding-top: 150px;
   display: flex;
   /* Remove horizontal 'justify-content' center if you want the base text not to move */
   font-family: 'JetBrains Mono', monospace;
