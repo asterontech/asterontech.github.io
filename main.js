@@ -1,40 +1,66 @@
-const words = ["CSS3.", "HTML5.", "javascript."];
-let i = 0;
-let timer;
+class TypeWriter {
+  constructor(txtElement, words, wait = 3000) {
+    this.txtElement = txtElement;
+    this.words = words;
+    this.txt = "";
+    this.wordIndex = 0;
+    this.wait = parseInt(wait, 10);
+    this.type();
+    this.isDeleting = false;
+  }
 
-function typingEffect() {
-	let word = words[i].split("");
-	var loopTyping = function() {
-		if (word.length > 0) {
-			document.getElementById('word').innerHTML += word.shift();
-		} else {
-			deletingEffect();
-			return false;
-		};
-		timer = setTimeout(loopTyping, 500);
-	};
-	loopTyping();
-};
+  type() {
+    // Current index of word
+    const current = this.wordIndex % this.words.length;
+    // Get full text of current word
+    const fullTxt = this.words[current];
 
-function deletingEffect() {
-	let word = words[i].split("");
-	var loopDeleting = function() {
-		if (word.length > 0) {
-			word.pop();
+    // Check if deleting
+    if (this.isDeleting) {
+      // Remove characters
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      // Add charaters
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
 
-document.getElementById('word').innerHTML = word.join("");
-		} else {
-			if (words.length > (i + 1)) {
-				i++;
-			} else {
-				i = 0;
-			};
-			typingEffect();
-			return false;
-		};
-		timer = setTimeout(loopDeleting, 200);
-	};
-	loopDeleting();
-};
+    // Insert txt into element
+    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
-typingEffect();
+    // Initial Type Speed
+    let typeSpeed = 50;
+
+    if (this.isDeleting) {
+      // Increase speed by half when deleting
+      typeSpeed /= 2;
+    }
+
+    // If word is complete
+    if (!this.isDeleting && this.txt === fullTxt) {
+      // Make pause at end
+      typeSpeed = this.wait;
+      // Set delete to true
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === "") {
+      this.isDeleting = false;
+      // Move to next word
+      this.wordIndex++;
+      // Pause before start typing
+      typeSpeed = 500;
+    }
+
+    setTimeout(() => this.type(), typeSpeed);
+  }
+}
+
+// Init On DOM Load
+document.addEventListener("DOMContentLoaded", init);
+
+// Init App
+function init() {
+  const txtElement = document.querySelector(".txt-type");
+  const words = JSON.parse(txtElement.getAttribute("data-words"));
+  const wait = txtElement.getAttribute("data-wait");
+  // Init TypeWriter
+  new TypeWriter(txtElement, words, wait);
+}
