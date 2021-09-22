@@ -44,30 +44,3 @@ body {
 }*/
 
 
-@import 'https://fonts.googleapis.com/css?family=Roboto';
-html, body {
-	background-color: transparent;
-}
-h2, a, p {
-	color: black;
-	font-family: Roboto;
-	text-decoration: none;
-}
-p>a {
-	color: #fd084a;
-}
-.blink {
-  animation: blink 0.5s infinite;
-}
-@keyframes blink{
-  to { opacity: .0; }
-}
-.flex {
-	display: flex;
-}
-.header-sub-title {
-  color: #fff;
-  font-family: "Courier";
-  font-size: 20px;
-  padding: 0.1em;
-}
