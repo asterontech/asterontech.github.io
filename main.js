@@ -1,10 +1,10 @@
 
 // List of sentences
 var _CONTENT = [ 
-	"Twinkle, twinkle, little star", 
-	"How I wonder what you are", 
-	"Up above the world so high", 
-	"Like a diamond in the sky"
+	"Welcome", 
+	"Made By", 
+	"Suraj And Vansh", 
+	
 ];
 
 // Current sentence being processed
