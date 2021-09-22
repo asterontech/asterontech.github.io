@@ -44,17 +44,17 @@ body {
 }
 
 .blink {
-  animation: blink 1s steps(1, end) infinite;
+  animation: blink 1s steps(0, end) infinite;
   font-size: 55px;
   font-width: bold;
 }
 
 @keyframes blink {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   50% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     opacity: 1;
