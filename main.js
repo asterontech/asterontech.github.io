@@ -1,3 +1,10 @@
+import Typewriter from 'typewriter-effect/dist/core';
+
+new Typewriter('#typewriter', {
+  strings: ['Hello', 'World'],
+  autoStart: true,
+});
+
 class TypeWriter {
   constructor(txtElement, words, wait = 2000) {
     this.txtElement = txtElement;
@@ -65,9 +72,6 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
-import Typewriter from 'typewriter-effect/dist/core';
 
-new Typewriter('#typewriter', {
-  strings: ['Hello', 'World'],
-  autoStart: true,
-});
+
+
