@@ -16,7 +16,7 @@ body {
 } 
 nav{
   display: flex;
-  height: 70px;
+  height: 50px;
   width: 100%;
   background: #1b1b1b;
   align-items: center;
