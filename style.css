@@ -44,31 +44,18 @@ body {
 }
 
 
-#container {
-	text-align: center;
+.blink {
+  animation: blink 0.5s infinite;
 }
-
-#text {
-	display: inline-block;
-	vertical-align: middle;
-	color: orange;
-	letter-spacing: 2px;
+@keyframes blink{
+  to { opacity: .0; }
 }
-
-#cursor {
-	display: inline-block;
-	vertical-align: middle;
-	width: 3px;
-	height: 50px;
-	background-color: orange;
-	animation: blink .7s step-end infinite;
+.flex {
+	display: flex;
 }
-
-@keyframes blink {
-	from, to { 
-		background-color: transparent 
-	}
-	50% { 
-		background-color: black; 
-	}
+.header-sub-title {
+  color: #fff;
+  font-family: "Courier";
+  font-size: 20px;
+  padding: 0.1em;
 }
