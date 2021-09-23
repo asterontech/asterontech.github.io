@@ -45,7 +45,7 @@ nav ul li a{
   padding: 8px 15px;
   border-radius: 5px;
   letter-spacing: 1px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 nav ul li a.active,
 nav ul li a:hover{
