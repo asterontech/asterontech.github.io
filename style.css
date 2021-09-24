@@ -24,18 +24,9 @@ nav{
   flex-wrap: wrap;
 }
 #a-logo{
-  width:100px;
-  height: 60px;
-  justify-content: center;
-  padding-top: 5px;
-  margin-top: 8px;
-  border-radius: 20px;
-  border: 2px solid;
-  background-color: black;
-  border-top-color: cyan;
-  border-bottom-color: magenta;
-  border-right-color: magenta;
-  border-left-color: cyan;
+  width:192px;
+  height: 108px;
+  
   
 }
 nav ul{
