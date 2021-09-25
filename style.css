@@ -27,8 +27,7 @@ nav{
   width:192px;
   height: 108px;
   margin-top: 20px;
-  float: left;
-  margin-right: 10px;
+  left: -15px;
   
 }
 nav ul{
@@ -65,8 +64,8 @@ input[type="checkbox"]{
 }
 @media (max-width: 1000px){
   nav{
-    padding-bottom: 130px;
-    padding-left: 15px;
+    padding-bottom: 125px;
+   
   }
 }
 @media (max-width: 920px) {
