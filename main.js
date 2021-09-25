@@ -66,7 +66,7 @@ function init() {
 }
 
 var cursor = true;
-var speed = 1000;
+var speed = 750;
 setInterval(() => {
   if (cursor) {
     document.getElementById('cursor').style.opacity = 0;
