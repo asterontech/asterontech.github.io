@@ -1,12 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-body {
-    font-size: 20pt;
-    background-color: transparent;
-    font-family: 'Samsung Sharp Sans';
-}
-
-
 *{
   margin: 0;
   padding: 0;
@@ -23,14 +15,13 @@ nav{
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
 }
-#a-logo{
-  width:192px;
-  height: 108px;
-  margin-top: 20px;
-  left: -50px;
-  top: -5px;
-  
+
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
 }
+
 nav ul{
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +38,7 @@ nav ul li a{
   padding: 8px 15px;
   border-radius: 5px;
   letter-spacing: 1px;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
 }
 nav ul li a.active,
 nav ul li a:hover{
@@ -65,8 +56,8 @@ input[type="checkbox"]{
 }
 @media (max-width: 1000px){
   nav{
-    padding-bottom: 125px;
-   
+    padding: 0 40px 0 50px;
+    padding-bottom: 130px;
   }
 }
 @media (max-width: 920px) {
@@ -79,16 +70,16 @@ input[type="checkbox"]{
   nav ul{
     position: fixed;
     top: 80px;
-    right: -100%;
+    left: -100%;
     background: #111;
     height: 100vh;
-    width: 50%;
+    width: 100%;
     text-align: center;
     display: block;
     transition: all 0.3s ease;
   }
   #click:checked ~ ul{
-    right: 0;
+    left: 0;
   }
   nav ul li{
     width: 100%;
@@ -110,58 +101,30 @@ input[type="checkbox"]{
     color: cyan;
   }
 }
-.content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: -1;
-  width: 100%;
-  padding: 0 30px;
-  color: #1b1b1b;
+
+#logo{
+  width: 192px;
+  height: 108px;
+  border: 2px solid transparent;
+  margin-top: 18px;
 }
-.content div{
-  font-size: 40px;
-  font-weight: 700;
-}
-
-
-
 
 /* ALIGN CONTENT */
 .container {
   display: flex;
- 
   justify-content: center;
   align-items: center;
   padding-top: 150px;
 }
 
-/* ADD CURSOR */
-.txt-type > .txt {
-  border-right: 0.08rem solid #fff;
-  padding-right: 2px;
-  /* Animating the cursor */
-  animation: blink 1s infinite;
-}
-
-/* ANIMATION */
-@keyframes blink {
-  0% {
-    border-right: 0.08rem solid rgba(255, 255, 255, 1);
-  }
-  100% {
-    border-right: 0.08rem solid rgba(255, 255, 255, 0.2);
-  }
-}
-  #page .section-background {background: white;}
-  #page section * {color: black !important;}
-  #page .content {
-    width: 100%;
-}
 
 #cursor{
           font-size: 40px;
           transition: 0.3s ease;
       }
+      
+  .txt-type>.txt {
+    border-right: 0.08rem solid #fff;
+    padding-right: 2px;
+    font-size: 40px;
+  }
