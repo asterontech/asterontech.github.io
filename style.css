@@ -60,7 +60,7 @@ input[type="checkbox"]{
     padding-bottom: 130px;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   nav .menu-btn i{
     display: block;
   }
