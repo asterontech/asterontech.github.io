@@ -179,8 +179,8 @@ input[type="checkbox"]{
   color: white;
 }
 .btn-posnawr:hover span {
-  width: 225%;
-  height: 562.5px;
+  width: 325%;
+  height: 662.5px;
 }
 .btn-posnawr:active {
   background-color: black;
