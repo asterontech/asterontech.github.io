@@ -126,6 +126,21 @@ input[type="checkbox"]{
   padding-top: 150px;
 }
 
+.topheading{
+  font-size: 42pt;
+  margin-top: 132px;
+  margin-left: 42px;
+}
+
+.intro{
+  font-size: 25pt;
+  margin-left: 49px;
+  margin-top:69px;
+  
+}
+
+
+
 
 .btn-posnawr {
   color: black;
