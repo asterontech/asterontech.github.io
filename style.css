@@ -127,6 +127,53 @@ input[type="checkbox"]{
 }
 
 
+.btn-posnawr {
+  color: black;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  border-radius: 8px;
+  margin-top: 63px;
+  margin-left: 40px;
+  border-radius: 16px;
+  font-size: 21pt;
+  
+  font-family: normal 16px/60px 'Samsung Sharp Sans', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.btn-posnawr span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: black;
+  -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  -webkit-transform: translate(-50#42445A, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.btn-posnawr:hover {
+  color: white;
+}
+.btn-posnawr:hover span {
+  width: 225%;
+  height: 562.5px;
+}
+.btn-posnawr:active {
+  background-color: black;
+}
+
+
+
+
 #cursor{
           font-size: 40px;
           transition: 0.3s ease;
