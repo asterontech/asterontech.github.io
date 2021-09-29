@@ -187,7 +187,46 @@ input[type="checkbox"]{
 }
 
 
-
+.animated {
+            background-image: url(images/BS-17 img/Asteron Business laptop 16bit.png);
+            background-repeat: no-repeat;
+            background-position: right top;
+            padding-top: 95px;
+            margin-bottom: 60px;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            height: 640px;
+            width: 360px;
+         }
+         
+         @-webkit-keyframes fadeInUpBig {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateY(2000px);
+            }
+            100% {
+               opacity: 1;
+               -webkit-transform: translateY(0);
+            }
+         }
+         
+         @keyframes fadeInUpBig {
+            0% {
+               opacity: 0;
+               transform: translateY(2000px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateY(0);
+            }
+         }
+         
+         .fadeInUpBig {
+            -webkit-animation-name: fadeInUpBig;
+            animation-name: fadeInUpBig;
+         }
 
 #cursor{
           font-size: 40px;
