@@ -190,7 +190,7 @@ input[type="checkbox"]{
 .animated {
             background-image: url('https://raw.githubusercontent.com/asterontech/asterontech.github.io/main/images/BS17img/Asteron-Business-laptop-8bit.png');
             background-repeat: no-repeat;
-            background-position: right top;
+            background-position: left top;
             padding-top: 95px;
             margin-bottom: 60px;
             margin-left: 620px;
