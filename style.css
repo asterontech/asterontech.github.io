@@ -64,7 +64,49 @@ input[type="checkbox"]{
   display: none;
 }
 @media (max-width: 1000000000000px){
-  nav{
+  
+    .animated {
+            background-image: url('https://raw.githubusercontent.com/asterontech/asterontech.github.io/main/images/BS17img/Asteron-Business-laptop-8bit.png');
+            background-repeat: no-repeat;
+            background-position: right top;
+            padding-left: 100px;
+            margin-right: 220px;
+            padding-bottom:500px;
+            background-size: 600px;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+         
+         @-webkit-keyframes fadeInUpBig {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateY(2000px);
+            }
+            100% {
+               opacity: 1;
+               -webkit-transform: translateY(0);
+            }
+         }
+         
+         @keyframes fadeInUpBig {
+            0% {
+               opacity: 0;
+               transform: translateY(3000px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateY(-310px);
+            }
+         }
+         
+         .fadeInUpBig {
+            -webkit-animation-name: fadeInUpBig;
+            animation-name: fadeInUpBig;
+         }
+    
+    nav{
     padding: 0 40px 0 50px;
     padding-bottom: 130px;
   }
@@ -227,6 +269,7 @@ input[type="checkbox"]{
             background-repeat: no-repeat;
             background-position: right top;
             padding-left: 100px;
+            margin-right: 220px;
             padding-bottom:500px;
             background-size: 600px;
             -webkit-animation-duration: 1s;
@@ -253,7 +296,7 @@ input[type="checkbox"]{
             }
             100% {
                opacity: 1;
-               transform: translateY(-200px);
+               transform: translateY(-310px);
             }
          }
          
