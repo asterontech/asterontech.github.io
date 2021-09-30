@@ -70,11 +70,11 @@ input[type="checkbox"]{
             background-repeat: no-repeat;
             background-position: right top;
             padding-left: 100px;
-            margin-right: 220px;
+            margin-right: 440px;
             padding-bottom:500px;
             background-size: 600px;
-            -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
          }
@@ -272,8 +272,8 @@ input[type="checkbox"]{
             margin-right: 220px;
             padding-bottom:500px;
             background-size: 600px;
-            -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
          }
