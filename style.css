@@ -139,59 +139,25 @@ input[type="checkbox"]{
   
 }
 
-.sbtn-posnawr {
-  text-align: center;
-  text-decoration: none;
-  line-height: 80px;
-  color: #00c4ad;
-  position: relative;
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 80px;
-  max-width: 250px;
-  margin: 1rem auto;
-  text-transform: uppercase;
-  border: 1px solid #00c4ad;
-}
-.sbtn-posnawr span {
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background-color: #00c4ad;
-  -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: -1;
-}
-.sbtn-posnawr:hover {
-  color: #eee;
-}
-.sbtn-posnawr:hover span {
-  width: 225%;
-  height: 562.5px;
-}
-.sbtn-posnawr:active {
-  background-color: #00c4ad;
+.buttons{
+  margin-left: 63px;
+  margin-top: 32px;
 }
 
 .btn-posnawr {
-  text-align: center;
-  text-decoration: none;
-  line-height: 80px;
-  color: #00c4ad;
+  color: #00abec;
   position: relative;
   display: block;
   overflow: hidden;
   width: 100%;
-  height: 80px;
+  margin-bottom: 32px;
+  height: auto;
   max-width: 250px;
-  margin: 1rem auto;
-  text-transform: uppercase;
-  border: 1px solid #00c4ad;
+  border-radius: 8px;
+  font: normal 18px/60px 'Samsung Sharp Sans', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #00abec;
 }
 .btn-posnawr span {
   position: absolute;
@@ -199,7 +165,7 @@ input[type="checkbox"]{
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: #00c4ad;
+  background-color: #00abec;
   -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
   transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
@@ -217,13 +183,52 @@ input[type="checkbox"]{
   background-color: #00c4ad;
 }
 
+.sbtn-posnawr {
+  color: #00abec;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  border-radius: 8px;
+  font: normal 18px/60px 'proxima-nova', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #00abec;
+}
+.sbtn-posnawr span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #00abec;
+  -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.sbtn-posnawr:hover {
+  color: #eee;
+}
+.sbtn-posnawr:hover span {
+  width: 225%;
+  height: 562.5px;
+}
+.sbtn-posnawr:active {
+  background-color: #00c4ad;
+}
+
+
 .animated {
             background-image: url('https://raw.githubusercontent.com/asterontech/asterontech.github.io/main/images/BS17img/Asteron-Business-laptop-8bit.png');
             background-repeat: no-repeat;
-            background-position: left top;
-            padding-top: 95px;
-            margin-bottom: 60px;
-            margin-left: 620px;
+            background-position: right top;
+            padding-left: 100px;
+            padding-bottom:500px;
+            background-size: 600px;
             -webkit-animation-duration: 1s;
             animation-duration: 1s;
             -webkit-animation-fill-mode: both;
@@ -244,11 +249,11 @@ input[type="checkbox"]{
          @keyframes fadeInUpBig {
             0% {
                opacity: 0;
-               transform: translateY(2000px);
+               transform: translateY(3000px);
             }
             100% {
                opacity: 1;
-               transform: translateY(0);
+               transform: translateY(-200px);
             }
          }
          
@@ -256,6 +261,7 @@ input[type="checkbox"]{
             -webkit-animation-name: fadeInUpBig;
             animation-name: fadeInUpBig;
          }
+
 
 #cursor{
           font-size: 40px;
