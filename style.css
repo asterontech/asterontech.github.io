@@ -267,7 +267,7 @@ input[type="checkbox"]{
          }
 
 
-#st13animated {
+.st13animated {
             background-image: url('https://raw.githubusercontent.com/asterontech/asterontech.github.io/main/images/ST13img/Asteron-School-laptop-right-view-8bit.png');
             background-repeat: no-repeat;
             background-position: right top;
@@ -280,7 +280,7 @@ input[type="checkbox"]{
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
     
-    @-webkit-keyframes st13animated {
+    @-webkit-keyframes fadeup {
             0% {
                opacity: 0;
                -webkit-transform: translateY(2000px);
@@ -291,15 +291,19 @@ input[type="checkbox"]{
             }
          }
          
-         @keyframes st13animated {
+         @keyframes fadeup {
             0% {
                opacity: 0;
-               transform: translateY(3000px);
+               transform: translateY(2000px);
             }
             100% {
                opacity: 1;
-               transform: translateY(-290px);
+               transform: translateY(-310px);
             }
+         }
+.fadeup {
+            -webkit-animation-name: fadeInUpBig;
+            animation-name: fadeInUpBig;
          }
 }
 
