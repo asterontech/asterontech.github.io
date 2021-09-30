@@ -67,43 +67,39 @@ function init() {
 
 
 $(function() {  
-  $('.btn-posnawr')
+  $('.sbtn-posnawr')
     .on('mouseenter', function(e) {
-	var parentOffset = $(this).offset(),
+			var parentOffset = $(this).offset(),
       		relX = e.pageX - parentOffset.left,
       		relY = e.pageY - parentOffset.top;
-	$(this).find('span').css({top:relY, left:relX})
+			$(this).find('span').css({top:relY, left:relX})
     })
     .on('mouseout', function(e) {
-	var parentOffset = $(this).offset(),
+			var parentOffset = $(this).offset(),
       		relX = e.pageX - parentOffset.left,
       		relY = e.pageY - parentOffset.top;
     	$(this).find('span').css({top:relY, left:relX})
     });
   $('[href=#]').click(function(){return false});
 });
-
 
 
 $(function() {  
-  $('.sbtn-posnawr')
+  $('.btn-posnawr')
     .on('mouseenter', function(e) {
-	var parentOffset = $(this).offset(),
+			var parentOffset = $(this).offset(),
       		relX = e.pageX - parentOffset.left,
       		relY = e.pageY - parentOffset.top;
-	$(this).find('span').css({top:relY, left:relX})
+			$(this).find('span').css({top:relY, left:relX})
     })
     .on('mouseout', function(e) {
-	var parentOffset = $(this).offset(),
+			var parentOffset = $(this).offset(),
       		relX = e.pageX - parentOffset.left,
       		relY = e.pageY - parentOffset.top;
     	$(this).find('span').css({top:relY, left:relX})
     });
   $('[href=#]').click(function(){return false});
 });
-
-
-
 
 
 var cursor = true;
