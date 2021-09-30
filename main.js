@@ -66,24 +66,41 @@ function init() {
 }
 
 
-(function() {
-  const buttons = document.querySelectorAll(".btn-posnawr");
-
-  buttons.forEach(button => {
-    ["mouseenter", "mouseout"].forEach(evt => {
-      button.addEventListener(evt, e => {
-        let parentOffset = button.getBoundingClientRect(),
-            relX = e.pageX - parentOffset.left,
-            relY = e.pageY - parentOffset.top;
-
-        const span = button.getElementsByTagName("span");
-
-        span[0].style.top = relY + "px";
-        span[0].style.left = relX + "px";
-      });
+$(function() {  
+  $('.btn-posnawr')
+    .on('mouseenter', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+			$(this).find('span').css({top:relY, left:relX})
+    })
+    .on('mouseout', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+    	$(this).find('span').css({top:relY, left:relX})
     });
-  });
-})();
+  $('[href=#]').click(function(){return false});
+});
+
+
+
+$(function() {  
+  $('.sbtn-posnawr')
+    .on('mouseenter', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+			$(this).find('span').css({top:relY, left:relX})
+    })
+    .on('mouseout', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+    	$(this).find('span').css({top:relY, left:relX})
+    });
+  $('[href=#]').click(function(){return false});
+});
 
 
 
