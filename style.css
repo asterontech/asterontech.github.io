@@ -224,7 +224,6 @@ input[type="checkbox"]{
   background-color: #00c4ad;
 }
 
-
 .animated {
             background-image: url('https://raw.githubusercontent.com/asterontech/asterontech.github.io/main/images/BS17img/Asteron-Business-laptop-8bit.png');
             background-repeat: no-repeat;
@@ -267,46 +266,48 @@ input[type="checkbox"]{
          }
 
 
-.st13animated {
-            background-image: url('https://raw.githubusercontent.com/asterontech/asterontech.github.io/main/images/ST13img/Asteron-School-laptop-right-view-8bit.png');
-            background-repeat: no-repeat;
-            background-position: right top;
-            padding-left: 100px;
-            margin-right: 220px;
-            padding-bottom:500px;
-            background-size: 600px;
-            -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-    
-    @-webkit-keyframes fadeup {
-            0% {
-               opacity: 0;
-               -webkit-transform: translateY(2000px);
-            }
-            100% {
-               opacity: 1;
-               -webkit-transform: translateY(0);
-            }
-         }
-         
-         @keyframes fadeup {
-            0% {
-               opacity: 0;
-               transform: translateY(2000px);
-            }
-            100% {
-               opacity: 1;
-               transform: translateY(-310px);
-            }
-         }
-.fadeup {
-            -webkit-animation-name: fadeInUpBig;
-            animation-name: fadeInUpBig;
-         }
+#st13animated {
+  background-image: url('https://raw.githubusercontent.com/asterontech/asterontech.github.io/main/images/ST13img/Asteron-School-laptop-right-view-8bit.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding-left: 10px;
+  margin-right: 70px;
+  padding-bottom: 500px;
+  background-size: 600px;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
+@-webkit-keyframes fadeup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeup {
+  0% {
+    opacity: 0;
+    transform: translateY(3000px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(-680px);
+  }
+}
+
+.fadeup {
+  -webkit-animation-name: fadeup;
+  animation-name: fadeup;
+}
 
 #cursor{
           font-size: 40px;
