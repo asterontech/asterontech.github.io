@@ -121,13 +121,6 @@ input[type="checkbox"]{
   margin-top: 18px;
 }
 
-/* ALIGN CONTENT */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 150px;
-}
 
 .topheading{
   font-size: 42pt;
@@ -148,7 +141,7 @@ input[type="checkbox"]{
 }
 
 .btn-posnawr {
-  color: #00abec;
+  color: black;
   position: relative;
   display: block;
   overflow: hidden;
@@ -160,7 +153,7 @@ input[type="checkbox"]{
   font: normal 18px/60px 'Samsung Sharp Sans', sans-serif;
   text-align: center;
   text-decoration: none;
-  border: 2px solid #00abec;
+ 
 }
 .btn-posnawr span {
   position: absolute;
@@ -168,7 +161,7 @@ input[type="checkbox"]{
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: #00abec;
+  background-color: black;
   -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
   transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
@@ -176,18 +169,18 @@ input[type="checkbox"]{
   z-index: -1;
 }
 .btn-posnawr:hover {
-  color: #eee;
+  color: white;
 }
 .btn-posnawr:hover span {
   width: 225%;
   height: 562.5px;
 }
 .btn-posnawr:active {
-  background-color: #00c4ad;
+  background-color: black;
 }
 
 .sbtn-posnawr {
-  color: #00abec;
+  color: black;
   position: relative;
   display: block;
   overflow: hidden;
@@ -198,7 +191,6 @@ input[type="checkbox"]{
   font: normal 18px/60px 'Samsung Sharp Sans', sans-serif;
   text-align: center;
   text-decoration: none;
-  border: 2px solid #00abec;
 }
 .sbtn-posnawr span {
   position: absolute;
@@ -206,7 +198,7 @@ input[type="checkbox"]{
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: #00abec;
+  background-color: black;
   -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
   transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
@@ -214,60 +206,203 @@ input[type="checkbox"]{
   z-index: -1;
 }
 .sbtn-posnawr:hover {
-  color: #eee;
+  color: white;
 }
 .sbtn-posnawr:hover span {
   width: 225%;
   height: 562.5px;
 }
 .sbtn-posnawr:active {
-  background-color: #00c4ad;
+  background-color: black;
 }
+
+
+
 
 #slide {
   position: relative;
     left: 10000px;
-    top: -700px;
-    width: 624px;
-    height: 382px;
-    background: transparent;
-    -webkit-animation: slide 3s forwards;
+    top: -300px;
+    width: 640px;
+    height: 360px;
+    -webkit-animation: slide 2s forwards;
     -webkit-animation-delay: 1s;
-    animation: slide 3s forwards;
-    animation-delay: 1s;
+    animation: slide 2s forwards;
+    animation-delay: 1s
 }
 
 @-webkit-keyframes slide {
-    100% { left: 40%; }
+    100% { left: 20%; }
 }
 
 @keyframes slide {
-    100% { left: 40%; }
+    100% { left: 20%; }
 }
 
 #slide2 {
   position: relative;
-  top: -400px;
+  top: -570px;
     left: 10000px;
-    width: 624px;
-    height: 382px;
+    width: 640px;
+    height: 360px;
     background: transparent;
-    -webkit-animation: slide2 4s forwards;
+    -webkit-animation: slide2 3s forwards;
     -webkit-animation-delay: 1s;
-    animation: slide2 4s forwards;
+    animation: slide2 3s forwards;
     animation-delay: 1s;
 }
 
 @-webkit-keyframes slide2 {
-    100% { left: 55%; }
+    100% { left: 35%; }
 }
 
 @keyframes slide2 {
-    100% { left: 55%; }
+    100% { left: 35%; }
 
 }
 
 
+.para{ 
+  margin-left: 230px;
+  top: -440px;
+  position: absolute;
+  font-size: 30pt;
+ 
+}
+
+.intcam{
+  margin-left: 650px;
+  top: -340px;
+  position: absolute;
+  font-size: 24pt;
+  
+}
+
+#clrbtn{
+  top: -200px;
+  margin-left: 700px;
+  position: absolute;
+}
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+   background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+.cam64intro{
+  position: absolute;
+  width: 640px;
+  height: 360px;
+  top: -400px;
+
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 7.75s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 7.75s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+/* ALIGN CONTENT */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
 
 #cursor{
           font-size: 40px;
@@ -278,4 +413,5 @@ input[type="checkbox"]{
     border-right: 0.08rem solid #fff;
     padding-right: 2px;
     font-size: 40px;
+    
   }
