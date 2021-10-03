@@ -224,90 +224,50 @@ input[type="checkbox"]{
   background-color: #00c4ad;
 }
 
-.animated {
-            background-image: url('https://raw.githubusercontent.com/asterontech/asterontech.github.io/main/images/BS17img/Asteron-Business-laptop-8bit.png');
-            background-repeat: no-repeat;
-            background-position: right top;
-            padding-left: 100px;
-            margin-right: 220px;
-            padding-bottom:500px;
-            background-size: 600px;
-            -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-         }
-         
-         @-webkit-keyframes fadeInUpBig {
-            0% {
-               opacity: 0;
-               -webkit-transform: translateY(2000px);
-            }
-            100% {
-               opacity: 1;
-               -webkit-transform: translateY(0);
-            }
-         }
-         
-         @keyframes fadeInUpBig {
-            0% {
-               opacity: 0;
-               transform: translateY(3000px);
-            }
-            100% {
-               opacity: 1;
-               transform: translateY(-310px);
-            }
-         }
-         
-         .fadeInUpBig {
-            -webkit-animation-name: fadeInUpBig;
-            animation-name: fadeInUpBig;
-         }
-
-
-#st13animated {
-  background-image: url('https://raw.githubusercontent.com/asterontech/asterontech.github.io/main/images/ST13img/Asteron-School-laptop-right-view-8bit.png');
-  background-repeat: no-repeat;
-  background-position: right top;
-  padding-left: 10px;
-  margin-right: 45px;
-  padding-bottom: 500px;
-  background-size: 700px;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+#slide {
+  position: relative;
+    left: 10000px;
+    top: -399px;
+    width: 624px;
+    height: 382px;
+    background: transparent;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 3s forwards;
+    animation-delay: 1s;
 }
 
-@-webkit-keyframes fadeup {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(2000px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
+@-webkit-keyframes slide {
+    100% { left: 20%; }
 }
 
-@keyframes fadeup {
-  0% {
-    opacity: 0;
-    transform: translateY(3000px);
-  }
-  
-  100% {
-    opacity: 1;
-    transform: translateY(-740px);
-  }
+@keyframes slide {
+    100% { left: 20%; }
 }
 
-.fadeup {
-  -webkit-animation-name: fadeup;
-  animation-name: fadeup;
+#slide2 {
+  position: relative;
+  top: -100px;
+    left: 10000px;
+    width: 624px;
+    height: 382px;
+    background: transparent;
+    -webkit-animation: slide 4s forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 4s forwards;
+    animation-delay: 1s;
 }
+
+@-webkit-keyframes slide {
+    100% { left: 35%; }
+}
+
+@keyframes slide {
+    100% { left: 35%; }
+
+}
+
+
 
 #cursor{
           font-size: 40px;
