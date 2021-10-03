@@ -227,7 +227,7 @@ input[type="checkbox"]{
 #slide {
   position: relative;
     left: 10000px;
-    top: -509px;
+    top: -700px;
     width: 624px;
     height: 382px;
     background: transparent;
@@ -238,16 +238,16 @@ input[type="checkbox"]{
 }
 
 @-webkit-keyframes slide {
-    100% { left: 20%; }
+    100% { left: 40%; }
 }
 
 @keyframes slide {
-    100% { left: 20%; }
+    100% { left: 40%; }
 }
 
 #slide2 {
   position: relative;
-  top: -200px;
+  top: -400px;
     left: 10000px;
     width: 624px;
     height: 382px;
@@ -259,11 +259,11 @@ input[type="checkbox"]{
 }
 
 @-webkit-keyframes slide2 {
-    100% { left: 35%; }
+    100% { left: 55%; }
 }
 
 @keyframes slide2 {
-    100% { left: 35%; }
+    100% { left: 55%; }
 
 }
 
