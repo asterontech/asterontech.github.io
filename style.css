@@ -232,16 +232,16 @@ input[type="checkbox"]{
 }
 
 @-webkit-keyframes slide {
-    100% { left: 20%; }
+    100% { left: 50%; }
 }
 
 @keyframes slide {
-    100% { left: 20%; }
+    100% { left: 50%; }
 }
 
 #slide2 {
   position: relative;
-  top: -570px;
+  top: -200px;
     left: 10000px;
     width: 640px;
     height: 360px;
@@ -253,33 +253,33 @@ input[type="checkbox"]{
 }
 
 @-webkit-keyframes slide2 {
-    100% { left: 35%; }
+    100% { left: 25%; }
 }
 
 @keyframes slide2 {
-    100% { left: 35%; }
+    100% { left: 25%; }
 
 }
 
 
 .para{ 
-  margin-left: 230px;
-  top: -440px;
+  margin-left: 930px;
+  top: -10px;
   position: absolute;
-  font-size: 30pt;
+  font-size: 24pt;
  
 }
 
 .intcam{
-  margin-left: 650px;
-  top: -340px;
+  margin-left: 1640px;
+  top: 90px;
   position: absolute;
-  font-size: 24pt;
+  font-size: 26pt;
   
 }
 
 #clrbtn{
-  top: -200px;
+  top: 100px;
   margin-left: 700px;
   position: absolute;
 }
@@ -352,6 +352,7 @@ input[type="checkbox"]{
   width: 640px;
   height: 360px;
   top: -400px;
+  left: 200px;
 
 }
 
