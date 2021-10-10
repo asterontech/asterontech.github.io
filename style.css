@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 @font-face {
-    font-family: 'Samsung Sharp Sans';
-    src: url('https://asterontech.github.io/fonts/SamsungSharpSans-Bold.eot');
-    src: url('https://asterontech.github.io/fonts/SamsungSharpSans-Bold.eot#iefix') format('embedded-opentype'),
-         url('https://asterontech.github.io/fonts/SamsungSharpSans-Bold.woff2') format('woff2'),
-         url('https://asterontech.github.io/fonts/SamsungSharpSans-Bold.woff') format('woff'),
-         url('https://asterontech.github.io/fonts/SamsungSharpSans-Bold.ttf')  format('truetype'),
-         url('https://asterontech.github.io/fonts/SamsungSharpSans-Bold.svg#Samsung Sharp Sans') format('svg');
+  font-family: 'Samsung Sharp Sans';
+  src: url('https://asterontech.github.io/fonts/SamsungSharpSans-Bold.eot');
+  src: url('https://asterontech.github.io/fonts/SamsungSharpSans-Bold.eot#iefix') format('embedded-opentype'),
+    url('https://asterontech.github.io/fonts/SamsungSharpSans-Bold.woff2') format('woff2'),
+    url('https://asterontech.github.io/fonts/SamsungSharpSans-Bold.woff') format('woff'),
+    url('https://asterontech.github.io/fonts/SamsungSharpSans-Bold.ttf') format('truetype'),
+    url('https://asterontech.github.io/fonts/SamsungSharpSans-Bold.svg#Samsung Sharp Sans') format('svg');
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Samsung Sharp Sans', sans-serif;
-} 
-nav{
+}
+
+nav {
   display: flex;
   height: 80px;
   width: 100%;
@@ -25,21 +28,23 @@ nav{
   flex-wrap: wrap;
 }
 
-nav .logo{
+nav .logo {
   color: #fff;
   font-size: 35px;
   font-weight: 600;
 }
 
-nav ul{
+nav ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
-nav ul li{
+
+nav ul li {
   margin: 0 5px;
 }
-nav ul li a{
+
+nav ul li a {
   color: #f2f2f2;
   text-decoration: none;
   font-size: 18px;
@@ -49,37 +54,44 @@ nav ul li a{
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
+
 nav ul li a.active,
-nav ul li a:hover{
+nav ul li a:hover {
   color: #111;
   background: #fff;
 }
-nav .menu-btn i{
+
+nav .menu-btn i {
   color: #fff;
   font-size: 22px;
   cursor: pointer;
   display: none;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
   display: none;
 }
-@media (max-width: 1000000000000px){
-  
-    
-    
-    nav{
+
+@media (max-width: 100000000px) {
+
+
+
+  nav {
     padding: 0 40px 0 50px;
     padding-bottom: 130px;
   }
 }
+
 @media (max-width: 1000px) {
-  nav .menu-btn i{
+  nav .menu-btn i {
     display: block;
   }
-  #click:checked ~ .menu-btn i:before{
+
+  #click:checked~.menu-btn i:before {
     content: "\f00d";
   }
-  nav ul{
+
+  nav ul {
     position: fixed;
     top: 80px;
     left: -100%;
@@ -90,31 +102,36 @@ input[type="checkbox"]{
     display: block;
     transition: all 0.3s ease;
   }
-  #click:checked ~ ul{
+
+  #click:checked~ul {
     left: 0;
   }
-  nav ul li{
+
+  nav ul li {
     width: 100%;
     margin: 40px 0;
   }
-  nav ul li a{
+
+  nav ul li a {
     width: 100%;
     margin-left: -100%;
     display: block;
     font-size: 20px;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  #click:checked ~ ul li a{
+
+  #click:checked~ul li a {
     margin-left: 0px;
   }
+
   nav ul li a.active,
-  nav ul li a:hover{
+  nav ul li a:hover {
     background: none;
     color: cyan;
   }
 }
 
-#logo{
+#logo {
   width: 192px;
   height: 108px;
   border: 2px solid transparent;
@@ -122,219 +139,573 @@ input[type="checkbox"]{
 }
 
 
-.topheading{
+.topheading {
   font-size: 42pt;
   margin-top: 132px;
   margin-left: 42px;
 }
 
-.intro{
+.intro {
   font-size: 26pt;
   margin-left: 69px;
   margin-top: 41px;
-  
+
 }
 
-.btns{
+.btns {
   margin-left: 63px;
   margin-top: 32px;
 }
 
 
-#slide {
-  position: relative;
-    left: 10000px;
-    top: -300px;
-    width: 640px;
-    height: 360px;
-    -webkit-animation: slide 2s forwards;
-    -webkit-animation-delay: 1s;
-    animation: slide 2s forwards;
-    animation-delay: 1s
+
+
+#animate1 {
+  height: 360px;
+  width: 640px;
+  position: absolute;
+
 }
 
-@-webkit-keyframes slide {
-    100% { left: 50%; }
-}
-
-@keyframes slide {
-    100% { left: 50%; }
-}
-
-#slide2 {
-  position: relative;
-  top: -200px;
-    left: 10000px;
-    width: 640px;
-    height: 360px;
-    background: transparent;
-    -webkit-animation: slide2 3s forwards;
-    -webkit-animation-delay: 1s;
-    animation: slide2 3s forwards;
-    animation-delay: 1s;
-}
-
-@-webkit-keyframes slide2 {
-    100% { left: 25%; }
-}
-
-@keyframes slide2 {
-    100% { left: 25%; }
+#animate2 {
+  height: 360px;
+  width: 640px;
+  position: absolute;
 
 }
 
 
-.para{ 
-  margin-left: 930px;
-  top: -10px;
+
+
+
+
+.para {
+  margin-left: 230px;
+  top: 600px;
+  position: absolute;
+  font-size: 30pt;
+
+}
+
+.intcam {
+  margin-left: 650px;
+  top: 680px;
   position: absolute;
   font-size: 24pt;
- 
+
 }
 
-.intcam{
-  margin-left: 1640px;
-  top: 90px;
-  position: absolute;
-  font-size: 26pt;
-  
-}
-
-#clrbtn{
-  top: 100px;
+#clrbtn {
+  top: 799px;
   margin-left: 700px;
   position: absolute;
 }
 
 
 .glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-   background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+  width: 220px;
+  text-decoration: none;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
 }
 
 .glow-on-hover:before {
-    content: '';
-   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
 }
 
 .glow-on-hover:active {
-    color: #000
+  color: #000
 }
 
 .glow-on-hover:active:after {
-    background: transparent;
+  background: transparent;
 }
 
 .glow-on-hover:hover:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
 }
 
 
 
-.cam64intro{
+.cam64intro {
   position: absolute;
   width: 640px;
   height: 360px;
-  top: -400px;
-  left: 200px;
+  top: 500px;
 
 }
 
-/* Animation */
 
-@keyframes fadeInUp {
-  from {
-    transform: translate3d(0, 40px, 0)
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1
-  }
-}
-
-@-webkit-keyframes fadeInUp {
-  from {
-    transform: translate3d(0, 40px, 0)
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1
-  }
-}
-
-.animated {
-  animation-duration: 7.75s;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 7.75s;
-  -webkit-animation-fill-mode: both
-}
-
-.animatedFadeInUp {
-  opacity: 0
-}
-
-.fadeInUp {
-  opacity: 0;
-  animation-name: fadeInUp;
-  -webkit-animation-name: fadeInUp;
-}
 
 /* ALIGN CONTENT */
 .container {
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
-  padding-top: 200px;
+  position: relative;
+  top: 900px;
 }
 
-#cursor{
-          font-size: 40px;
-          transition: 0.3s ease;
-      }
-      
-  .txt-type>.txt {
-    border-right: 0.08rem solid #fff;
-    padding-right: 2px;
-    font-size: 40px;
-    
-  }
+#cursor {
+  font-size: 40px;
+  transition: 0.3s ease;
+}
+
+.txt-type>.txt {
+  border-right: 0.08rem solid #fff;
+  padding-right: 2px;
+  font-size: 40px;
+
+}
+
+
+.bs-17img {
+  height: 360px;
+  width: 640px;
+
+}
+
+.bs-17introhead {
+  font-size: 42pt;
+  padding-top: 10px;
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+.introparabs-17 {
+  font-size: 26pt;
+  padding-top: 25px;
+}
+
+.bs-17design {
+  font-family: 'Poppins', sans-serif;
+  left: 0;
+  font-size: 14pt;
+  margin-top: 155px;
+
+
+
+}
+
+.bs-17design h4 {
+  padding-top: 22pt;
+  font-size: 50pt;
+}
+
+#lappy180 {
+  height: 544px;
+  width: 896px;
+  right: 0;
+  top: 400px;
+  position: absolute;
+}
+
+#Bs-17lappy {
+  float: right;
+  height: 360px;
+  width: 680px;
+  position: absolute;
+  right: 0;
+
+}
+
+
+#design2 {
+
+  float: right;
+  font-size: 42pt;
+  margin-top: 990px;
+
+
+}
+
+#design2para {
+  left: 0;
+  margin-top: 999px;
+  text-align: right;
+  font-size: 14pt;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.slimbs-17 {
+  height: 360px;
+  width: 708px;
+  left: -90px;
+  position: absolute;
+  bottom: 250px;
+}
+
+.slimbs-17p2 {
+  height: 360px;
+  width: 560px;
+  float: left;
+  position: absolute;
+  bottom: 100px;
+  left: -40px;
+
+}
+
+#dis {
+  font-size: 36pt;
+  font-family: 'Poppins', sans-serif;
+  float: right;
+  margin-top: 400px;
+}
+
+#display-bs {
+  margin-bottom: 12px;
+  margin-top: 500px;
+  font-size: 50pt;
+  right: 0;
+  margin-left: 500px;
+  position: absolute;
+
+
+}
+
+.displaybs-17 {
+  text-align: right;
+  margin-top: 700px;
+  font-size: 14pt;
+  font-family: 'Poppins', sans-serif;
+}
+
+.display-bs-17 {
+  height: 460px;
+  width: 780px;
+  left: -180px;
+  position: absolute;
+  top: 3990px;
+}
+
+.soundbs-17 {
+  font-size: 14pt;
+  float: right;
+  text-align: right;
+  margin-top: 110px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.soundp {
+  font-size: 36pt;
+  font-family: 'Poppins', sans-serif;
+  float: right;
+  margin-top: 430px;
+}
+
+.soundtitle {
+  font-size: 42pt;
+  position: absolute;
+  right: 0px;
+  top: 5150px;
+}
+
+#soundimg {
+  height: 360px;
+  width: 680px;
+  left: -100px;
+  position: absolute;
+  bottom: -4200px;
+}
+
+#performancetitle {
+  font-size: 36pt;
+  margin-top: 310px;
+  font-family: 'Poppins', sans-serif;
+  float: left;
+}
+
+.performpara {
+  margin-top: 146pt;
+  float: left;
+  font-size: 36pt;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.perfo {
+  margin-top: 80px;
+  top: 1730px;
+  font-size: 42pt;
+  position: absolute;
+  float: left;
+}
+
+.performanceimg1 {
+  height: 360px;
+  width: 680px;
+  right: 10px;
+  top: 6890px;
+  position: absolute;
+  transform: rotate(-12.24deg);
+}
+
+.performanceimg2 {
+  height: 360px;
+  width: 680px;
+  top: 6890px;
+  position: absolute;
+  right: 200px;
+
+}
+
+
+.abtstorage {
+  text-align: right;
+  float: right;
+  font-size: 36pt;
+  margin-top: 180px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.storagetitle {
+  float: right;
+  margin-top: 190px;
+  font-size: 36pt;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.storagehead {
+  right: 0;
+  position: absolute;
+  font-size: 42pt;
+  margin-top: 3100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.storageimg1 {
+  height: 360px;
+  width: 680px;
+  left: 0;
+  position: absolute;
+  top: 8000px;
+}
+
+
+.io {
+  float: left;
+  margin-top: 300px;
+}
+
+.iopara {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30pt;
+}
+
+.iohead {
+  font-size: 42pt;
+  margin-bottom: 10px;
+}
+
+.paraofio {
+  font-family: 'Poppin', sans-serif;
+  font-size: 22pt;
+}
+
+.iobottom {
+  right: 250px;
+  height: 360px;
+  width: 680px;
+  position: absolute;
+  top: 9100px;
+}
+
+.iotop {
+  float: right;
+  height: 360px;
+  width: 680px;
+  position: absolute;
+  top: 9000px;
+}
+
+
+.camhead {
+  top: 5690px;
+  position: absolute;
+  text-align: center;
+  font-size: 42pt;
+
+}
+
+.camerapara {
+  position: absolute;
+  top: 5600px;
+  text-align: center;
+  left: 45%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24pt;
+}
+
+.campara {
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  top: 6200px;
+  position: absolute;
+  text-align: center;
+}
+
+.lappycamera {
+  margin-top: 400px;
+  height: 360px;
+  width: 680px;
+
+}
+
+.keyboard {
+  margin-top: 800px;
+
+  float: right;
+}
+
+.keyhead {
+  float: right;
+  font-size: 42pt;
+  margin-top: 60px;
+}
+
+.keytitle {
+  float: right;
+  right: 50px;
+  position: absolute;
+  font-size: 36pt;
+  font-family: 'Poppins', sans-serif;
+}
+
+.keypara {
+  margin-top: 20px;
+  float: right;
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.keyimg {
+  height: 360px;
+  width: 680px;
+  float: left;
+  position: absolute;
+  top: 11900px;
+
+}
+
+.bodydu {
+  position: absolute;
+  top: 12900px;
+}
+
+.dtitle {
+  bottom: 930px;
+  position: absolute;
+  font-size: 30pt;
+  font-family: 'Poppins', sans-serif;
+}
+
+.durabilityh {
+  font-size: 42pt;
+}
+
+.durabilitypara {
+  position: relative;
+  margin-top: 20px;
+  font-size: 42pt;
+  font-family: 'Poppins';
+}
+
+.durabilityimage {
+  height: 360px;
+  width: 680px;
+  float: right;
+  margin-top: 500px;
+}
+
+.endbs-17 {
+  position: absolute;
+  top: 14220px;
+}
+
+.bs-17end {
+  font-size: 52pt;
+}
+
+.endpara {
+  margin-top: 210px;
+  font-size: 42px;
+}
+
+.end1 {
+  height: 360px;
+  width: 680px;
+  position: absolute;
+  right: -500px;
+  bottom: -50px;
+}
+
+.introst-13{
+  margin-top: 80px;
+  text-align: center;
+  font-size: 42pt;
+}
+
+.introimg{
+  margin-top: 90px;
+  height: 360px;
+  width: 680px;
+  
+}
+
+.st-13line{
+  margin-top: 66px;
+  font-size: 36pt;
+  text-align: center;
+}
