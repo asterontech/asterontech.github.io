@@ -164,6 +164,8 @@ input[type="checkbox"] {
   height: 360px;
   width: 640px;
   position: absolute;
+  right: 400px;
+  top: -200px;
 
 }
 
@@ -171,13 +173,10 @@ input[type="checkbox"] {
   height: 360px;
   width: 640px;
   position: absolute;
+  top: -320px;
+  right: 160px;
 
 }
-
-
-
-
-
 
 .para {
   margin-left: 230px;
@@ -290,7 +289,8 @@ input[type="checkbox"] {
   text-align: center;
   align-items: center;
   position: relative;
-  top: 900px;
+  top: 300px;
+  padding-bottom: 200px;
 }
 
 #cursor {
@@ -361,17 +361,19 @@ input[type="checkbox"] {
 
   float: right;
   font-size: 42pt;
+  margin-right: 50px;
   margin-top: 990px;
 
 
 }
 
 #design2para {
-  left: 0;
+  margin-right: 50px;
   margin-top: 999px;
   text-align: right;
-  font-size: 14pt;
+  font-size: 26pt;
   font-family: 'Poppins', sans-serif;
+  margin-right: 5opx;
 
 }
 
@@ -380,9 +382,9 @@ input[type="checkbox"] {
   width: 708px;
   left: -90px;
   position: absolute;
-  bottom: 250px;
+  bottom: 200px;
 }
-
+  
 .slimbs-17p2 {
   height: 360px;
   width: 560px;
@@ -390,6 +392,7 @@ input[type="checkbox"] {
   position: absolute;
   bottom: 100px;
   left: -40px;
+  top: 1100px;
 
 }
 
@@ -398,14 +401,15 @@ input[type="checkbox"] {
   font-family: 'Poppins', sans-serif;
   float: right;
   margin-top: 400px;
+  margin-right: 50px;
 }
 
 #display-bs {
   margin-bottom: 12px;
   margin-top: 500px;
   font-size: 50pt;
-  right: 0;
-  margin-left: 500px;
+  right: 50px;
+  margin-left: 450px;
   position: absolute;
 
 
@@ -414,23 +418,25 @@ input[type="checkbox"] {
 .displaybs-17 {
   text-align: right;
   margin-top: 700px;
-  font-size: 14pt;
+  font-size: 26pt;
+  margin-right: 50px;
   font-family: 'Poppins', sans-serif;
 }
 
 .display-bs-17 {
-  height: 460px;
-  width: 780px;
-  left: -180px;
+  height: 580px;
+  width: 880px;
+  left: 80px;
   position: absolute;
-  top: 3990px;
+  top: 3600px;
 }
 
 .soundbs-17 {
-  font-size: 14pt;
+  font-size: 26pt;
   float: right;
   text-align: right;
-  margin-top: 110px;
+  margin-right: 50px;
+  margin-top: 450px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -438,15 +444,17 @@ input[type="checkbox"] {
 .soundp {
   font-size: 36pt;
   font-family: 'Poppins', sans-serif;
-  float: right;
-  margin-top: 430px;
+  right: 50px;
+  margin-right: 0px;
+  top: 4560px;
 }
 
 .soundtitle {
   font-size: 42pt;
   position: absolute;
-  right: 0px;
-  top: 5150px;
+  margin-right: 50px;
+  top: 4620px;
+  right: 1px;
 }
 
 #soundimg {
@@ -458,33 +466,35 @@ input[type="checkbox"] {
 }
 
 #performancetitle {
-  font-size: 36pt;
-  margin-top: 310px;
+  font-size: 22pt;
+  margin-top: 1410px;
   font-family: 'Poppins', sans-serif;
   float: left;
+  margin-left: 56px;
 }
 
 .performpara {
-  margin-top: 146pt;
+  margin-top: 469pt;
   float: left;
-  font-size: 36pt;
+  font-size: 26pt;
   font-family: 'Poppins', sans-serif;
-
+  margin-left: -200px;
 }
 
 .perfo {
   margin-top: 80px;
-  top: 1730px;
+  top: 1400px;
   font-size: 42pt;
   position: absolute;
   float: left;
+  margin-left: 50px;
 }
 
 .performanceimg1 {
   height: 360px;
   width: 680px;
   right: 10px;
-  top: 6890px;
+  top: 6000px;
   position: absolute;
   transform: rotate(-12.24deg);
 }
@@ -492,7 +502,7 @@ input[type="checkbox"] {
 .performanceimg2 {
   height: 360px;
   width: 680px;
-  top: 6890px;
+  top: 6000px;
   position: absolute;
   right: 200px;
 
@@ -502,15 +512,16 @@ input[type="checkbox"] {
 .abtstorage {
   text-align: right;
   float: right;
-  font-size: 36pt;
-  margin-top: 180px;
+  font-size: 26pt;
+  margin-top: 1690px;
   font-family: 'Poppins', sans-serif;
+  margin-right: -200px;
 
 }
 
 .storagetitle {
   float: right;
-  margin-top: 190px;
+  margin-top: 1390px;
   font-size: 36pt;
   font-family: 'Poppins', sans-serif;
 
@@ -520,7 +531,7 @@ input[type="checkbox"] {
   right: 0;
   position: absolute;
   font-size: 42pt;
-  margin-top: 3100px;
+  margin-top: 2500px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -529,13 +540,14 @@ input[type="checkbox"] {
   width: 680px;
   left: 0;
   position: absolute;
-  top: 8000px;
+  top: 7000px;
 }
 
 
 .io {
   float: left;
-  margin-top: 300px;
+  margin-top: 1300px;
+  margin-left: 50px;
 }
 
 .iopara {
@@ -550,7 +562,8 @@ input[type="checkbox"] {
 
 .paraofio {
   font-family: 'Poppin', sans-serif;
-  font-size: 22pt;
+  font-size: 26pt;
+  margin-top: 15px;
 }
 
 .iobottom {
@@ -558,7 +571,7 @@ input[type="checkbox"] {
   height: 360px;
   width: 680px;
   position: absolute;
-  top: 9100px;
+  top: 7900px;
 }
 
 .iotop {
@@ -566,21 +579,24 @@ input[type="checkbox"] {
   height: 360px;
   width: 680px;
   position: absolute;
-  top: 9000px;
+  top: 8000px;
+  margin-left: 1000px;
 }
 
 
 .camhead {
-  top: 5690px;
+  top: 4764px;
   position: absolute;
   text-align: center;
   font-size: 42pt;
+  left: 60px;
+
 
 }
 
 .camerapara {
   position: absolute;
-  top: 5600px;
+  top: 4700px;
   text-align: center;
   left: 45%;
   font-family: 'Poppins', sans-serif;
@@ -588,24 +604,28 @@ input[type="checkbox"] {
 }
 
 .campara {
-  font-size: 40px;
+  font-size: 26pt;
   font-family: 'Poppins', sans-serif;
-  top: 6200px;
+  top: 4900px;
   position: absolute;
-  text-align: center;
+  text-align: left;
+  left: 90px;
+
 }
 
 .lappycamera {
-  margin-top: 400px;
+  margin-top: 1545px;
   height: 360px;
   width: 680px;
+  right: 800px;
 
 }
 
 .keyboard {
-  margin-top: 800px;
-
+  margin-top: 650px;
+  text-align: center;
   float: right;
+  font-size: 22pt;
 }
 
 .keyhead {
@@ -625,6 +645,7 @@ input[type="checkbox"] {
 .keypara {
   margin-top: 20px;
   float: right;
+  font-size: 26pt;
   text-align: right;
   font-family: 'Poppins', sans-serif;
 }
@@ -635,7 +656,7 @@ input[type="checkbox"] {
   width: 680px;
   float: left;
   position: absolute;
-  top: 11900px;
+  top: 10200px;
 
 }
 
@@ -671,7 +692,7 @@ input[type="checkbox"] {
 
 .endbs-17 {
   position: absolute;
-  top: 14220px;
+  top: 11220px;
 }
 
 .bs-17end {
